@@ -1,0 +1,434 @@
+Module,Connector,Pin,Wire Color,Goes To,Source Pin,Function / Role,Confidence,Notes,Source PDF Pages
+ECM,A,1,GN-SB,6/120,6,ETB position sensor 2 signal,HIGH,,47
+ECM,A,2,GN-GR,7/156,4,Boost/MAP sensor signal,HIGH,twisted pair w/ A:3,47
+ECM,A,3,GN-R,7/156,2,Boost/MAP sensor signal,HIGH,twisted pair w/ A:2,47
+ECM,A,4,GR-R,7/16,1,Coolant temperature signal,HIGH,,47
+ECM,A,5,GN-R,7/165,2,Intake manifold pressure signal,HIGH,,47
+ECM,A,6,GN-R,7/82,2,O2 sensor 2 signal,HIGH,,56
+ECM,A,9,W,8/18,2,Solenoid drive (EVAP-related),HIGH,8/18 is variable valve timing outlet per component list,56
+ECM,A,13,Y-R,8/19,2,EVAP valve drive,HIGH,common to all variants on this page,56
+ECM,A,14,VO-W,53/315,,Injector common return (junction),HIGH,53/315 is sensor 5V supply / injector return,47
+ECM,A,15,Y-W,8/8,2,Injector cyl 3 drive,HIGH,,47
+ECM,A,16,BN-W,8/6,2,Injector cyl 1 drive,HIGH,,47
+ECM,A,17,GN,8/10,2,Injector cyl 5 drive,HIGH,,47
+ECM,A,18,W,7/15,4,O2 sensor 1 heater +,HIGH,,56
+ECM,A,19,GN-Y,6/120,2,ETB motor drive -,HIGH,,47
+ECM,A,20,BN,6/120,5,ETB position sensor ground,HIGH,,47
+ECM,A,21,GN-W,8/81,2,VVT outlet solenoid drive,HIGH,TURBO-marked; 8/81:1 (GN-GR) goes to 53/309 power junction,56
+ECM,A,22,VO-W,7/17,4,MAF sensor signal,HIGH,,47
+ECM,A,23,Y,7/165,4,Intake manifold pressure signal,HIGH,,47
+ECM,A,24,GN-R,7/15,6,O2 sensor 1 signal (twisted w/ A:28),HIGH,twisted with A:28; 7/15 is the O2 sensor,56
+ECM,A,26,BN-SB,7/35,4,QLT sensor ground,HIGH,,47
+ECM,A,27,BL-SB,7/173,3,Cam sensor 2 signal,HIGH,TURBO,56
+ECM,A,28,BL-SB,7/15,2,O2 sensor 1 heater drive (twisted w/ A:24),HIGH,,56
+ECM,A,29,R,7/172,1,Cam sensor 1 power (via 53/375),HIGH,TURBO; 53/375 is shared power w/ 7/173:1,56
+ECM,A,30,BN,20/4,1,Ignition coil cyl 2 trigger,HIGH,,47
+ECM,A,31,BL,20/3,1,Ignition coil cyl 1 trigger,HIGH,user-confirmed,47
+ECM,A,33,P-W,8/9,2,Injector cyl 4 drive,HIGH,,47
+ECM,A,34,BN-W,8/7,2,Injector cyl 2 drive,HIGH,"BN-W reused, OK",47
+ECM,A,35,GN,6/120,4,ETB position sensor supply 5V,HIGH,,47
+ECM,A,36,BL-R,6/120,1,ETB motor drive +,HIGH,,47
+ECM,A,38,BL-W,8/28,1,Turbocharger control valve drive,HIGH,,47
+ECM,A,39,VO-W,53/332,,Sensor 5V supply junction,HIGH,shared 5V to multiple sensors,47
+ECM,A,40,BL-W,7/35,1,QLT sensor LIN data,HIGH,dashed line = LIN bus,47
+ECM,A,41,GN-SB,7/15,1,O2 sensor 1 signal ref (twisted w/ A:42),HIGH,,56
+ECM,A,42,Y,7/15,5,O2 sensor 1 signal (twisted w/ A:41),HIGH,,56
+ECM,A,45,BN,7/23,1,Rear knock sensor (via 54/53:3),HIGH,,47
+ECM,A,46,BN-SB,7/24,1,Front knock sensor (via 54/53:1),HIGH,,47
+ECM,A,47,BL,7/172,3,Cam sensor 1 signal,HIGH,TURBO,56
+ECM,A,48,R,7/25,1,CKP sensor signal +,HIGH,,47
+ECM,A,50,Y,20/5,1,Ignition coil cyl 3 trigger,HIGH,user-confirmed; 53/328 is +12V supply to all coil pin 4 (not a shield),47
+ECM,A,51,VO,20/7,1,Ignition coil cyl 5 trigger,HIGH,,47
+ECM,A,52,P,20/6,1,Ignition coil cyl 4 trigger,HIGH,,47
+ECM,A,53,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,54,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,58,VO,7/17,5,MAF sensor signal,HIGH,"twisted bundle w/ 7/17 pins 3,4,5; user-confirmed",47
+ECM,A,59,W,6/120,3,ETB position sensor 1 signal,HIGH,,47
+ECM,A,60,BN-SB,53/319,,Sensor ground junction,HIGH,"shared by 7/16, 7/165, 7/8, others",47
+ECM,A,61,SB,7/82,4,O2 sensor 2 heater drive,HIGH,twisted with A:62,56
+ECM,A,62,GR,7/82,3,O2 sensor 2 ground/heater common,HIGH,twisted with A:61,56
+ECM,A,63,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,64,SB,7/24,2,Front knock sensor (via 54/53:2),HIGH,,47
+ECM,A,65,SB,7/172,2,Cam sensor 1 ground (via 53/376),HIGH,TURBO; 53/376 is shared ground w/ 7/173:2,56
+ECM,A,66,W,7/25,2,CKP sensor signal -,HIGH,,47
+ECM,A,67,Y-SB,7/23,2,Rear knock sensor (via 54/53:4),HIGH,,47
+ECM,A,68,BN-P,7/8,3,Oil pressure signal,HIGH,,47
+ECM,B,1,GN-W,54/36,1,CAN HISPEED (twisted w/ B:13),HIGH,user-confirmed; CAN hi-speed signal,"40, 48"
+ECM,B,4,BN,7/123 (MAN only) / unused (AUTO),4,Clutch sensor signal (MAN swap wiring),HIGH,user-confirmed: AUTO has NO connection here. For MAN swap: run BN from B:4 + SB from B:15 to clutch sensor 7/123 in cabin. 53/324 is fabricated junction.,48
+ECM,B,5,GR-R,7/51,4,Accelerator pedal 7/51 pin 4,HIGH,user note: just routes to pedal connector pin 4,48
+ECM,B,7,BL-SB,6/67,1,"Fuel leakage pump ground (via 54/3.2:4, 54/34:4)",HIGH,,56
+ECM,B,9,GR-W,7/51,6,Accelerator pedal sensor 1 supply,HIGH,,48
+ECM,B,11,Y-W,3/1,X,Keyed +15 (ignition switch),HIGH,Arrow B on page 47; from ignition switch pin X via 15/31,48
+ECM,B,13,GN,54/36,2,CAN LOSPEED (twisted w/ B:1),HIGH,user-confirmed; CAN lo-speed signal,"40, 48"
+ECM,B,15,SB,7/123,2,Clutch pedal sensor signal (MAN swap only),HIGH,user-confirmed: AUTO has NO connection; MAN swap requires running this SB wire to 7/123:2 in cabin,48
+ECM,B,17,BN-SB,7/51,5,Accelerator pedal sensor 1 ground,HIGH,,48
+ECM,B,23,GN-R,4/56,C:5,CEM connection (signal),HIGH,,48
+ECM,B,25,BL-W,7/51,2,Accelerator pedal sensor 2 signal,HIGH,,48
+ECM,B,26,Y-GR,4/56,C:35,CEM connection (signal),HIGH,,48
+ECM,B,29,OR-W,unused on AUTO,,Unused on AUTO transmission,HIGH,user-confirmed: 53/324 does not exist on AUTO; B:29 is unused for S60R AUTO,48
+ECM,B,34,GN-R,6/67,4,"Fuel leakage pump power (via 54/3.2:2, 54/34:1)",HIGH,dashed line; via GN-GR through 54/3.2,56
+ECM,B,37,BL-R,4/56,C:14,CEM connection (signal),HIGH,,48
+ECM,B,38,R,2/32,87,Main +30 power (via FMA2 / 15/31),HIGH,Arrow A on page 47; +30 supply from engine relay,48
+ECM,B,40,GN,6/67,2,"Fuel leakage pump drive (via 54/3.2:3, 54/34:2)",HIGH,,56
+ECM,B,44,GN-W,15/31_C5,11,Engine compartment dist box,HIGH,,48
+ECM,B,46,GR,5/1,2,Tach/RPM signal to DIM (via 54/3.1 pin 18),HIGH,,48
+ECM,B,47,Y,54/3.1,6,S60R-specific via inline connector 54/3.1,HIGH,"dashed line, S60R marking",48
+ECM,B,48,SB,6/44,,ECM/TCM cooling fan control,HIGH,user-confirmed: 6/44 = cooling fan electrics box (engine compartment). Dashed line in diagram.,48
+TCM,A,35,VO-W,4/56,B:20,"CEM B:20 (F21 fuse, AUTO trans control)",HIGH,matches CEM B:20,102
+TCM,A,53,SB,53/303,,Chassis ground via 53/303 → 31/94,HIGH,,102
+TCM,A,54,BL-SB,3/156,A:6,GSM (Gear Selector) pin A:6 via 54/3.1:26,HIGH,,102
+TCM,B,1,,HISPEED CAN backbone,,HISPEED CAN (MAN trans — NOT S60R),HIGH,MAN-only path (dashed); not used on S60R AUTO,40
+TCM,B,2,W,HISPEED CAN backbone,,HISPEED CAN HI (AUTO trans),HIGH,AUTO path (solid lines); applies to S60R AW55-50SN,40
+TCM,B,13,,HISPEED CAN backbone,,HISPEED CAN (MAN trans — NOT S60R),HIGH,MAN-only path,40
+TCM,B,14,GN,HISPEED CAN backbone,,HISPEED CAN LO (AUTO trans),HIGH,AUTO path,40
+TCM,B,21,GN-SB,3/156 GSM,A:2,LIN bus to Gear Selector Module (AUTO),HIGH,via 54/3.1:5; AUTO trans only,42
+CEM,A,4,Y-R,4/58A,13,REM connection (F16 fuse),HIGH,,36
+CEM,A,6,VO,16/1A AUM,2,Audio module amplifier supply (F28),HIGH,Confirmed by both page 37 (CEM 2:2) and Audio page (PDF 92). Brake lights page (PDF 66) shows A:6 with Y-R from 10/19:1 — likely a Volvo manual misprint; should probably be A:5 or A:7. Verify on harness.,"36, 37"
+CEM,A,8,BL-R,6/62 + 6/63,4,L+R door mirror common feed,HIGH,F30 fuse; via 54/10:2 + 54/11:2 (dashed paths),37
+CEM,A,10,VO-W,53/437,,F10 output (to junction 53/437),HIGH,,37
+CEM,A,12,GN-W,4/58A,21,REM connection,HIGH,,36
+CEM,A,15,GN-Y,4/58A,18,REM connection,HIGH,,36
+CEM,A,16,BL,54/36,5,Inline connector 54/36 pin 5,HIGH,,37
+CEM,A,17,VO,9/1/9/25A,,12V outlet power output (F11),HIGH,feeds 9/1:1 (front 12V) AND 9/25A:1 (rear 12V),36
+CEM,A,18,BL,9/13,4,Right seat warmer pin 4,HIGH,F1 fuse; via 54/25:2,37
+CEM,A,19,BL,9/12,4,Left seat heater pin 4,HIGH,F2 fuse; via 54/24:2,37
+CEM,A,22,VO,3/27,3,Power passenger seat module pin 3,HIGH,F28 fuse; LHD path via 54/25:14,37
+CEM,A,25,VO-W,3/156A,1,Gear Selector Module pin A1,HIGH,F21 fuse; S60R AUTO,37
+CEM,A,29,GN,4/58A,20,REM connection,HIGH,,36
+CEM,B,1,GN-GR,8/84,1,Vacuum pump switch pin 1,HIGH,F33 fuse,37
+CEM,B,2,BL,15/31_C4,3,CEM power feed,HIGH,,36
+CEM,B,3,BL-R,15/31_C6,13,CEM power feed,HIGH,,36
+CEM,B,4,BL-Y,10/2A,2,R-h low beam (Bi-Xenon),HIGH,via 54/23:3,37
+CEM,B,5,SB,53/301,,Sensor ground junction,HIGH,,37
+CEM,B,7,BL-W,10/1A,2,L-h low beam (Bi-Xenon),HIGH,via 54/22:3,37
+CEM,B,8,BL-GN,10/1A,6,L-h daytime running light,HIGH,via 54/22:4,37
+CEM,B,9,BL-P,10/2A,6,R-h daytime running light,HIGH,via 54/23:4,37
+CEM,B,10,VO-W,54/9,5,F10 output (W/O ECPS variant),HIGH,W/O ECPS marking — likely NOT used on S60R (S60R has ECPS),37
+CEM,B,11,R,3/9,1,Brake light contact pin 1,HIGH,F9 fuse-protected,37
+CEM,B,15,R-SB,16/10/16/11,,Horn 1 + Horn 2 trigger,HIGH,common via 54/4 pins 1/2,36
+CEM,B,16,R,15/31_C6,12,CEM power feed (horn power),HIGH,via 11B/20 or 11B/21 fuse,36
+CEM,B,17,P,10/5,1,Front left fog light,HIGH,F17 fuse,37
+CEM,B,18,P,10/6,1,Front right fog light,HIGH,F18 fuse,37
+CEM,B,19,VO,6/3 + 6/4,2,Headlight wiper motors common power (both pin 2),HIGH,F14 fuse,37
+CEM,B,20,VO-W,4/28A,35,TCM pin A:35 (AUTO trans),HIGH,F21 fuse; matches TCM data; S60R AUTO,37
+CEM,B,21,Y,6/127,1,Headlight washer pump,HIGH,,36
+CEM,B,22,BL,4/16,4,Brake Control Module (BCM) pin 4,HIGH,F15 fuse,37
+CEM,B,23,VO,53/398,,F16 output ECPS power; via 53/398 to 54/22:1 and 54/23:1 (headlight common power),HIGH,ECPS marking applies to S60R,37
+CEM,B,24,R-W,15/31_C4,4,CEM power feed (from engine compartment dist box),HIGH,via 11B/17 or 11B/18 fuse,36
+CEM,B,25,R,16/35,1,Siren Control Module pin 1,HIGH,F8 fuse,37
+CEM,B,27,BL,10/1A,1,L-h high beam (Bi-Xenon path),HIGH,F22; via 54/22:7; S60/Bi-X path,37
+CEM,B,28,W,10/2A,1,R-h high beam (Bi-Xenon path),HIGH,F23; via 54/23:7; S60/Bi-X path,37
+CEM,B,29,Y-R,6/127,2,Headlight washer pump,HIGH,,36
+CEM,B,30,Y-SB,6/3 + 6/4,1,Headlight wiper motors common drive (both pin 1),HIGH,one CEM pin feeds both L+R wipers,37
+CEM,B,31,GN,10/13/10/11/10/15,,L-front direction/parking/fender indicators,HIGH,common via 54/22:9,36
+CEM,B,32,GN-W,10/14/10/12/10/16,,R-front direction/parking/fender indicators,HIGH,common via 54/23:9,36
+CEM,B,35,,,,Unknown — labeled on fog lights page,LOW,pin label visible at CEM block but wire color/destination not clearly readable,65
+CEM,B,47,,,,Unknown — labeled on reversing lights page,LOW,pin label visible but wire color/destination unclear,67
+CEM,B,50,,,,Unknown — labeled on fog lights page,LOW,pin label visible at CEM block but wire color/destination not clearly readable,65
+CEM,C,1,GR-W,10/1A,5,L-h headlight (Bi-Xenon) pin 5,HIGH,Bi-Xenon only; S60R has Bi-Xenon STANDARD; via 54/22:5,37
+CEM,C,2,GN,10/2A,5,R-h headlight (Bi-Xenon) pin 5,HIGH,Bi-Xenon only; via 54/23:5,37
+CEM,C,3,Y,15/31_C5,15,Engine bay dist box C5:15,HIGH,,37
+CEM,C,4,GR,15/31_C4,8,Engine bay dist box C4:8,HIGH,,37
+CEM,C,5,GN-R,4/46,B:23,ECM connection,HIGH,matches ECM B:23,36
+CEM,C,6,BL-OR,15/31_C4,12,Engine bay dist box C4:12,HIGH,,37
+CEM,C,7,GN-OR,15/31_C4,16,Engine bay dist box C4:16,HIGH,,37
+CEM,C,9,BN-W,2/64,1,Auxiliary light (ACC) relay,HIGH,via 54/8:2,36
+CEM,C,10,Y-GN,7/5,1,Washer fluid level sensor pin 1,HIGH,,37
+CEM,C,11,GN-BU,6/39,2,R-h headlight level adjustment motor,HIGH,via 54/23:6,36
+CEM,C,12,GN-R,6/38,2,L-h headlight level adjustment motor,HIGH,via 54/22:6,36
+CEM,C,14,BL-R,4/46,B:37,ECM connection,HIGH,matches ECM B:37,36
+CEM,C,16,GN-W,15/31_C4,1,Engine bay dist box C4:1,HIGH,also routes via 15/31_A1:12 to 6/26:B1 (Generator),37
+CEM,C,17,GN-W,4/99,2,ECPS control module (4/99) pin 2,HIGH,S60R has ECPS,37
+CEM,C,19,W,10/1A,3,L-h headlight common signal,HIGH,via 54/22:2,37
+CEM,C,20,GR,10/2A,3,R-h headlight common signal,HIGH,via 54/23:2,37
+CEM,C,21,W,HISPEED backbone,,HISPEED CAN backbone (ECM/TCM/ETM segment via 53/430),HIGH,twisted pair w/ C:22,40
+CEM,C,22,GN,HISPEED backbone,,HISPEED CAN backbone (via 53/431),HIGH,twisted pair w/ C:21,40
+CEM,C,25,GN-SB,15/31_C5,12,Engine bay dist box C5:12,HIGH,,37
+CEM,C,28,BL-Y,8/37A,3,AW55-50SN trans solenoid (S60R Geartronic),HIGH,S60R-specific path; other variant: 4T65EV5 Y-GR from 4/28A:44,36
+CEM,C,31,BL-W,6/1,3,Windshield wiper motor pin 3,HIGH,,37
+CEM,C,32,GN-W,6/26 ACM / 4/7 CPM,,LIN bus (to Generator ACM and CPM),HIGH,via 54/9:6 and 15/31_A1:12,42
+CEM,C,34,Y-GR,3/10,1,Reversing light contact (MAN trans only),HIGH,user note: not pinned on S60R AUTO; user will add reverse light wiring later,"36, 37"
+CEM,C,35,Y-GR,4/46,B:26,ECM connection,HIGH,matches ECM B:26,36
+CEM,D,1,W,10/126,2,R-h front courtesy lighting,HIGH,,36
+CEM,D,2,W,10/125,2,L-h front courtesy lighting,HIGH,,36
+CEM,D,3,W,10/122,2,L-h rear courtesy lighting (S80 only),HIGH,S80 only — not used on S60R; via 54/20:7,36
+CEM,D,4,W,10/123,2,R-h rear courtesy lighting (S80 only),HIGH,S80 only — not used on S60R; via 54/21:7,36
+CEM,D,6,SB,31/6,,CEM chassis ground (LHD),HIGH,LHD only; RHD uses 31/10. S60R LHD US market uses 31/6,37
+CEM,D,7,Y,3/254,9,Steering Wheel Module (SWM),HIGH,,36
+CEM,D,8,VO,53/408,,Power feed (junction; also feeds SRS 4/9B:27/55 and keyless 3/157:1),HIGH,,37
+CEM,D,9,W,10/29,1,Glove compartment lighting,HIGH,,37
+CEM,D,12,Y-W,9/25A,2,Rear 12V outlet,HIGH,,36
+CEM,D,13,GN-R,16/65,5,Antenna ring pin 5,HIGH,,37
+CEM,D,14,Y-W,3/6,1,Hazard warning flasher switch,HIGH,,36
+CEM,D,15,Y,3/1,S,Ignition switch pin S,HIGH,,37
+CEM,D,16,BL-R,53/443,,Power distribution to keyless/SRS/DLC,HIGH,"53/443 also feeds 3/157, 4/9, 17/13, 16/65",36
+CEM,D,17,Y,3/254,10,Steering Wheel Module (SWM),HIGH,,36
+CEM,D,19,Y-W,16/60,17,Phone Module (PHM),HIGH,,36
+CEM,D,20,Y-W,4/9B,2/30,SRS module (airbag control),HIGH,,36
+CEM,D,22,Y,3/6,3,Hazard warning flasher switch,HIGH,,36
+CEM,D,23,BL-W,3/156A (AUTO) / 8/134 (MAN M66),3,Reverse lockout solenoid trigger,HIGH,user-confirmed: same pin used on MAN and AUTO; triggers solenoid that blocks shifter from going into reverse >5mph. No repinning needed for trans swap.,36
+CEM,D,24,GN-W,3/111 LSM,3,"LIN bus (to LSM, RHD path)",HIGH,RHD only via 54/11:12,42
+CEM,D,29,BL,7/12,4,Solar/twilight sensor pin 4,HIGH,,37
+CEM,D,30,Y,7/12,1,Solar/twilight sensor pin 1,HIGH,,37
+CEM,D,31,W,4/68 SAS,4,HISPEED CAN HI (to SAS/SWM),HIGH,twisted pair w/ D:46,40
+CEM,D,33,W,DLC 17/13,6,HISPEED CAN (to DLC 17/13),HIGH,W = CAN HI; twisted pair w/ D:48; corrected from page 36 misreading,"36, 40"
+CEM,D,34,W,5/1 DIM,8,LOSPEED CAN HI (to DIM),HIGH,twisted pair w/ D:49,41
+CEM,D,35,W,4/58 REM/4/78 AEM,,LOSPEED CAN HI (to REM+AEM segment),HIGH,twisted pair w/ D:50,41
+CEM,D,36,W,4/52 PSM (via 54/24:12 LHD),,LOSPEED CAN HI (to PSM),HIGH,"twisted pair w/ D:51; LHD route via 54/24, RHD via 54/25",41
+CEM,D,37,W,4/9 SRS,B:24/52,LOSPEED CAN HI (to SRS),HIGH,twisted pair w/ D:52,41
+CEM,D,38,W,4/70 UEM (via 54/13:5),,LOSPEED CAN HI (to UEM/PHM),HIGH,twisted pair w/ D:53,41
+CEM,D,39,W,3/126 DDM/PDM (via 54/10:3),,LOSPEED CAN HI (DDM/PDM/AUM/CCM segment),HIGH,twisted pair w/ D:54; routes via 54/10:3,41
+CEM,D,40,W,DLC 17/13,3,LOSPEED CAN (to DLC 17/13),HIGH,W = CAN HI; twisted pair w/ D:55; corrected from page 36 misreading. Confirmed via CAN data communication 1:2 page.,"36, 41"
+CEM,D,41,GN-W,4/70 UEM,21,LIN bus (to UEM and LSM),HIGH,,42
+CEM,D,42,BN,7/12,5,Solar/twilight sensor pin 5,HIGH,,37
+CEM,D,43,GN,54/36,3,Inline connector 54/36 pin 3,HIGH,,37
+CEM,D,44,BL,54/36,1,Inline connector 54/36 pin 1,HIGH,,37
+CEM,D,45,BN,54/36,2,Inline connector 54/36 pin 2,HIGH,,37
+CEM,D,46,GN,4/68 SAS,3,HISPEED CAN LO (to SAS/SWM),HIGH,twisted pair w/ D:31,40
+CEM,D,47,GN,AWD/FOUR-C segment,,HISPEED CAN LO (AWD/FOUR-C segment),HIGH,twisted pair w/ D:33; S60R is AWD+Four-C,40
+CEM,D,48,GN,DLC 17/13,14,HISPEED CAN (to DLC 17/13),HIGH,GN = CAN LO; twisted pair w/ D:33; corrected,"36, 40"
+CEM,D,49,GN,5/1 DIM,7,LOSPEED CAN LO (to DIM),HIGH,twisted pair w/ D:34,41
+CEM,D,50,GN,4/58 REM/4/78 AEM,,LOSPEED CAN LO (to REM+AEM segment),HIGH,twisted pair w/ D:35,41
+CEM,D,51,GN,4/52 PSM (via 54/24:11 LHD),,LOSPEED CAN LO (to PSM),HIGH,twisted pair w/ D:36,41
+CEM,D,52,GN,4/9 SRS,B:26/54,LOSPEED CAN LO (to SRS),HIGH,twisted pair w/ D:37,41
+CEM,D,53,GN,4/70 UEM (via 54/13:6),,LOSPEED CAN LO (to UEM/PHM),HIGH,twisted pair w/ D:38,41
+CEM,D,54,GN,3/126 DDM/PDM (via 54/10:4),,LOSPEED CAN LO (DDM/PDM/AUM/CCM segment),HIGH,twisted pair w/ D:39,41
+CEM,D,55,GN,DLC 17/13,11,LOSPEED CAN (to DLC 17/13),HIGH,GN = CAN LO; twisted pair w/ D:40; corrected,"36, 41"
+CEM,D,56,BL,16/65,3,Antenna ring/ignition lighting,HIGH,,36
+CEM,D,57,GR,16/65,2,Antenna ring/ignition lighting,HIGH,,36
+CEM,D,58,GN-W,27/3 LCM / 3/254 SWM,7,"LIN bus (to LCM/SWM, LHD path)",HIGH,LHD via 54/10:12; SWM pin 7,42
+CEM,D,60,Y-W,3/1,50,Ignition switch pin 50 (start),HIGH,,37
+CEM,E,A,R,54/40D,2,CEM main +30 power input,HIGH,,37
+CEM,E,B,R,54/40D,1,CEM main +30 power input,HIGH,,37
+REM,A,1,GN-BN,3/85,5,Rear left door power window switch pin 5,HIGH,via 54/20:8; F10 fuse,39
+REM,A,2,BL,3/85,3,Rear left door power window switch pin 3,HIGH,via 54/20:6,39
+REM,A,6,Y-R,10/19,1,Auxiliary brake light (S80 only),HIGH,S80 marking; via 54/13:11,39
+REM,A,13,Y-R,4/56A,4,CEM connection (matches CEM A:4),HIGH,,39
+REM,A,14,BL,4/82,1,DEM (4/82) pin 1 via 53/502 and 54/74:1,HIGH,F23 fuse,39
+REM,A,15,R,16/16,1,CD changer pin 1 (or related audio),HIGH,F38 fuse,39
+REM,A,16,R,16/16,1,16/16 (CD changer area),HIGH,F37 fuse; both A:15 and A:16 feed via 4/82:1 / 16/16:1,39
+REM,A,18,GN-Y,4/56A,15,CEM connection (matches CEM A:15),HIGH,,39
+REM,A,19,Y,3/85,1,Rear left door power window switch pin 1,HIGH,via 54/20:5,39
+REM,A,20,GN,4/56A,29,CEM connection (matches CEM A:29),HIGH,,39
+REM,A,21,GN-W,4/56A,12,CEM connection (matches CEM A:12),HIGH,,39
+REM,A,23,Y,3/76,4,L-h rear door lock unit pin 4,HIGH,via 54/20:11,39
+REM,A,24,GR,3/76,6,L-h rear door lock unit pin 6,HIGH,via 54/20:10; F28 fuse,39
+REM,A,25,Y-R,8/59,1,Rear left belt tensioner igniter,HIGH,F19 fuse,39
+REM,A,27,VO,3/76,8,L-h rear door lock unit pin 8,HIGH,via 54/20:9,39
+REM,A,29,BL,3/1,8,Ignition switch pin 8,HIGH,,39
+REM,A,30,BL,4/84C,1,SUM C:1 (SUM CAN/data),HIGH,F24 fuse,39
+REM,A,32,SB,31/47,,REM chassis ground,HIGH,,39
+REM,B,1,GN-BN,3/86,3,Rear right door power window switch pin 3,HIGH,"via 54/21:8, 54/43:8; F9 fuse",39
+REM,B,2,BL,3/86,5,Rear right door power window switch pin 5,HIGH,"via 54/21:6, 54/43:1",39
+REM,B,4,P,10/18,2,L-h tail light path (S60/S80),HIGH,both S60 and S80,39
+REM,B,7,BL,10/18A,3,L-h tail light (S60),HIGH,S60; F1 fuse,"39, 67"
+REM,B,8,R-W,16/15,2,CD changer pin 2,HIGH,F6 fuse; also feeds 16/45D:1 (RTI/Multimedia),39
+REM,B,9,BL-SB,6/37,1,"Lock motor, fuel filler flap",HIGH,,39
+REM,B,10,BL,10/17A,2,R-h tail light (S60),HIGH,S60; F1 fuse,"39, 67"
+REM,B,11,GN,10/18A,2,L-h tail light auxiliary (S60),HIGH,S60,39
+REM,B,12,GR,3/77,6,R-h rear door lock unit pin 6,HIGH,via 54/43:10 + 54/21:9,39
+REM,B,15,BL,8/85,1,"Thermostatic switch, fuel filter",HIGH,F13 fuse; via 54/35:3,39
+REM,B,21,BL,4/86A,1,PAM (Parking Assistance) pin A:1,HIGH,F26 fuse,39
+REM,B,22,R,4/78A,2,AEM A:2,HIGH,F3 fuse,39
+REM,B,23,P,10/17A,3,R-h tail light L-marker (S60),HIGH,S60 marking — applies S60R; F1 fuse; S80 routes to 10/17:6,39
+REM,B,24,VO,3/77,5,R-h rear door lock unit pin 5,HIGH,via 54/43:11 + 54/21:3,39
+REM,B,25,Y-R,54/106,1,Bi-fuel pump/valves (Bi-fuel only),HIGH,via 54/54:7; NOT S60R,39
+REM,B,26,Y,3/77,4,R-h rear door lock unit pin 4,HIGH,via 54/43:2 + 54/21:11,39
+REM,B,28,Y-R,8/60,1,Rear right belt tensioner igniter,HIGH,,39
+REM,B,30,Y,3/86,1,Rear right door power window switch pin 1,HIGH,"via 54/21:5, 54/43:7",39
+REM,B,31,R,17/19,1,"12V outlet, cargo compartment",HIGH,F8 fuse,39
+REM,C,1,GN,3/75,3,R-h front door lock unit pin 3,HIGH,,39
+REM,C,3,P,3/76,2,L-h rear door lock unit pin 2,HIGH,via 54/20:3,39
+REM,C,4,Y,3/62,1,R-h power door mirror pin 1,HIGH,"via 54/4:3, 54/3.1:14",39
+REM,C,5,BL,3/76,5,L-h rear door lock unit pin 5,HIGH,via 54/20:4,39
+REM,C,6,GR,7/120,4,Vacuum pump pin 4 (W/O SUM),HIGH,W/O SUM,39
+REM,C,9,BN-W,7/120,1,Vacuum pump pin 1 (W/O SUM),HIGH,W/O SUM,39
+REM,C,11,GN-R,7/120,5,Vacuum pump pin 5 (W/O SUM cars),HIGH,W/O SUM marking; S60R has SUM (Four-C) so probably NOT used,39
+REM,C,12,P,3/74,3,L-h front door lock unit pin 3,HIGH,via 54/10:8,39
+REM,C,13,GN,4/56,D:50,LOSPEED CAN LO (from CEM D:50),HIGH,matches CEM D:50,39
+REM,C,14,W,4/56,D:35,LOSPEED CAN HI (from CEM D:35),HIGH,matches CEM D:35,39
+REM,D,1,GR,10/18A,1,L-h tail light pin 1 (S60),HIGH,S60 marking; S80 has GR-W route,39
+REM,D,2,W,10/127,2,Cargo compartment lighting L-h,HIGH,,39
+REM,D,3,BN,10/18,Bi-fuel,LPG (Bi-fuel only) — NOT S60R,HIGH,Bi-fuel CNG/LPG,39
+REM,D,5,GR,10/17B,1,R-h tail light (S60),HIGH,S60,39
+REM,D,6,GR-W,10/18B,1,L-h tail light (S60),HIGH,S60,39
+REM,D,8,Y-GR,7/156,4,CNG Bi-fuel pressure sensor — NOT S60R,HIGH,Bi-fuel only,39
+REM,D,11,W,10/128,2,Cargo compartment lighting R-h,HIGH,,39
+REM,D,12,SB,31/72,,REM chassis ground (via 53/602),HIGH,,39
+REM,D,14,GR-R,7/156,1,CNG Bi-fuel pressure sensor — NOT S60R,HIGH,Bi-fuel,39
+REM,D,15,VO,7/156,2,Bi-fuel — NOT S60R,HIGH,Bi-fuel,39
+REM,D,18,Y,10/18,7,L-h tail light (S80),HIGH,S80 only — NOT S60R; use B:3 path instead,39
+REM,D,26,Y,7/100,1,Inclination Sensor Module (ISM) pin 1,HIGH,,39
+REM,D,27,Y,7/156,3,Bi-fuel — NOT S60R,HIGH,Bi-fuel,39
+REM,D,28,BL,3/77,5,"R-h rear door (via 54/43:11, 54/21:4)",HIGH,,39
+REM,D,29,P,3/78,1,Trunk lid lock unit pin 1,HIGH,"via 54/11:8, 54/35:4; F28 fuse",39
+REM,D,31,GN-W,7/100,2,ISM pin 2,HIGH,,39
+REM,D,32,GN-W,4/86A,12,PAM A:12,HIGH,,39
+REM,D,33,P,3/77,4,"R-h rear door (via 54/43:5, 54/21:3)",HIGH,F28 fuse,39
+REM,D,36,GN-Y,7/153,1,LPG Bi-fuel level sensor — NOT S60R,HIGH,Bi-fuel,39
+REM,E,A,R,4/110A,6,Trailer Module (TRM) pin A:6,HIGH,F-protected; trailer wiring optional,39
+REM,E,B,P,4/110B,4,Trailer Module pin B:4,HIGH,,39
+REM,E,C,GN-R,4/110A,11,Trailer Module pin A:11,HIGH,,39
+REM,E,D,GN-Y,4/110A,4,Trailer Module pin A:4,HIGH,,39
+REM,E,E,Y,4/110B,1,Trailer Module pin B:1,HIGH,,39
+REM,E,F,R-W,17/39,10,Towing socket pin 10 (13-pin),HIGH,,39
+REM,E,G,R,17/39,9,Towing socket pin 9 (13-pin),HIGH,,39
+REM,E,H,BL,17/39,8,Towing socket pin 8 (13-pin),HIGH,,39
+REM,E,J,GN,4/110B,5,Trailer Module pin B:5,HIGH,,39
+REM,E,K,GN-W,4/110B,3,Trailer Module pin B:3,HIGH,,39
+REM,E,L,GR,4/110B,2,Trailer Module pin B:2,HIGH,,39
+REM,E,M,R,4/110A,7,Trailer Module pin A:7,HIGH,,39
+REM,F,2,BL-SB,3/78,?,Trunk lid lock unit (uncertain pin),LOW,*** AMBIGUITY *** two label-positions read as F:2 on page 38; verify on harness,39
+REM,F,3,GR-GN,10/3,,License plate lighting,HIGH,via 54-multiplexer; from p39,39
+REM,F,5,BN-R,3/78,4,Trunk lid lock unit pin 4,HIGH,,39
+REM,F,8,GR-W,3/78,2,Trunk lid lock unit pin 2,HIGH,F28 fuse,39
+REM,F,10,GR-,10/3,,"(label partially unreadable, dashed)",MEDIUM,character cut off in transcription,39
+REM,K,I,R-W,11E/1,2,Main +30 battery power,HIGH,,39
+SRS,A,3,BL-OR,8/51,2,Front L side curtain airbag pin 2,HIGH,A:3,127
+SRS,A,4,OR,8/51,1,Front L side curtain airbag pin 1,HIGH,A:4 via 54/24,127
+SRS,A,5,OR,8/33,1,Front L belt tensioner igniter pin 1,HIGH,A:5,127
+SRS,A,6,GN-OR,8/33,2,Front L belt tensioner igniter pin 2,HIGH,A:6,127
+SRS,A,8,OR,7/115,1,Front L side impact sensor pin 1,HIGH,A:8,127
+SRS,A,9,OR-SB,7/115,2,Front L side impact sensor pin 2,HIGH,A:9,127
+SRS,A,15,BL-OR,8/55,2,Rear L belt tensioner igniter pin 2,HIGH,A:15,127
+SRS,A,16,OR,8/55,1,Rear L belt tensioner igniter pin 1,HIGH,A:16,127
+SRS,A,18,OR,7/179,1,(uncertain device — labeled 7/179),MEDIUM,A:18 abs pos 18,127
+SRS,A,19,OR-SB,7/179,2,(uncertain device),MEDIUM,A:19,127
+SRS,A,21,OR,8/66,1,L inflatable curtain igniter pin 1,HIGH,A:21,127
+SRS,A,22,OR-SB,8/66,2,L inflatable curtain igniter pin 2,HIGH,A:22,127
+SRS,A,25,VO,4/56,D:8,Power feed (alt path via 53/408),HIGH,A:25 abs pos 25,127
+SRS,A,26,OR-SB,3/93,,Driver seat belt buckle switch,HIGH,A:26 abs pos 26 via 54/24:18/19,127
+SRS,A,27,OR,7/108,1,Rear L side impact sensor pin 1,HIGH,A:27,127
+SRS,A,28,GN-OR,7/108,2,Rear L side impact sensor pin 2,HIGH,A:28,127
+SRS,B,2,Y-W,4/56,D:20,CEM D:20 connection,HIGH,B:2 abs pos 30; SRS to CEM crash signal,127
+SRS,B,7,BL-OR,18/4,2,Contact reel pin 2,HIGH,B:7 abs pos 35,127
+SRS,B,8,OR,18/4,1,Contact reel pin 1 (squib OR/BL-OR pair),HIGH,B:8 abs pos 36,127
+SRS,B,9,OR,18/4,3,Contact reel pin 3,HIGH,B:9 abs pos 37,127
+SRS,B,10,GN-OR,18/4,4,Contact reel pin 4,HIGH,B:10 abs pos 38,127
+SRS,B,11,OR-SB,8/31,2,Passenger airbag igniter pin 2,HIGH,B:11 abs pos 39,127
+SRS,B,12,OR,8/31,1,Passenger airbag igniter pin 1,HIGH,B:12 abs pos 40; via 54/12:1,127
+SRS,B,13,OR,8/32,1,Passenger airbag stage 2 igniter pin 1,HIGH,B:13 abs pos 41; via 54/12:4,127
+SRS,B,14,GN-OR,8/32,2,Passenger airbag stage 2 igniter pin 2,HIGH,B:14 abs pos 42,127
+SRS,B,20,OR,7/178,4,(uncertain device — labeled 7/178),MEDIUM,B:20 abs pos 48,127
+SRS,B,21,GN-OR,7/178,3,(uncertain device),MEDIUM,B:21 abs pos 49,127
+SRS,B,23,OR,4/56,D:37,LOSPEED CAN to CEM,HIGH,B:23 abs pos 51,127
+SRS,B,24,OR-SB,4/56,D:37,LOSPEED CAN to CEM,HIGH,B:24 abs pos 52; CEM D:37/D:52 pair,127
+SRS,B,25,OR,4/56,D:52,LOSPEED CAN to CEM,HIGH,B:25 abs pos 53,127
+SRS,B,26,OR-SB,4/56,D:52,LOSPEED CAN to CEM,HIGH,B:26 abs pos 54,127
+SRS,B,27,VO,4/56,D:8,CEM D:8 power feed via 53/408 junction,HIGH,B:27 abs pos 55; matches CEM D:8,127
+SRS,B,28,BL-R,4/56,D:16,CEM D:16 power feed,HIGH,B:28 abs pos 56; matches CEM D:16,127
+SRS,C,3,BL-OR,8/52,2,Front R side curtain airbag pin 2,HIGH,C:3 abs pos 59,127
+SRS,C,4,OR,8/52,1,Front R side curtain airbag pin 1,HIGH,C:4 abs pos 60,127
+SRS,C,5,OR,8/34,1,Front R belt tensioner igniter pin 1,HIGH,C:5 abs pos 61,127
+SRS,C,6,GN-OR,8/34,2,Front R belt tensioner igniter pin 2,HIGH,C:6 abs pos 62,127
+SRS,C,8,OR,7/116,1,Front R side impact sensor pin 1,HIGH,C:8 abs pos 64,127
+SRS,C,9,OR-SB,7/116,2,Front R side impact sensor pin 2,HIGH,C:9 abs pos 65,127
+SRS,C,15,BL-OR,8/56,2,Rear R belt tensioner igniter pin 2,HIGH,C:15 abs pos 71,127
+SRS,C,16,OR,8/56,1,Rear R belt tensioner igniter pin 1,HIGH,C:16 abs pos 72,127
+SRS,C,21,OR,8/67,1,R inflatable curtain igniter pin 1,HIGH,C:21 abs pos 77,127
+SRS,C,22,OR-SB,8/67,2,R inflatable curtain igniter pin 2,HIGH,C:22 abs pos 78,127
+SRS,C,23,GN-OR,8/62,2,Center rear belt tensioner pin 2,HIGH,C:23 abs pos 79,127
+SRS,C,24,OR,8/62,1,Center rear belt tensioner pin 1,HIGH,C:24 abs pos 80,127
+SRS,C,27,OR,7/109,1,Rear R side impact sensor pin 1,HIGH,C:27 abs pos 83,127
+SRS,C,28,GN-OR,7/109,2,Rear R side impact sensor pin 2,HIGH,C:28 abs pos 84,127
+CCM,A,1,VO-W,7/192,6,Evap temp sensor,HIGH,,121
+CCM,A,2,Y,4/31,A:3,Fan control module,HIGH,,121
+CCM,A,3,BL,4/31,B:1,Fan control module,HIGH,,121
+CCM,A,5,VO,7/192,3,Fan motor power,HIGH,,121
+CCM,A,7,GN-W,7/192,5,Fan motor LIN data,HIGH,,121
+CCM,A,8,GN,4/56,D:39,LOSPEED CAN to CEM,HIGH,matches CEM D:39 via DDM/PDM/AUM bus,41
+CCM,A,9,,3/173,,Mirror retract switch,HIGH,,108
+CCM,A,10,W,4/56,D:54,LOSPEED CAN to CEM,HIGH,matches CEM D:54,41
+CCM,A,11,,3/173,,Mirror retract switch,HIGH,twisted pair w/ A:9,108
+CCM,A,12,GN-W,7/192,2,Fan motor command (LIN),HIGH,,121
+CCM,A,13,BN,7/192,4,Fan motor ground,HIGH,,121
+CCM,A,16,BN,53/438,,Ground junction,HIGH,,121
+DIM,,2,GR,4/46,B:46,RPM/tach signal from ECM,HIGH,matches ECM B:46,48
+DIM,,7,GN,4/56,D:49,LOSPEED CAN LO to CEM,HIGH,matches CEM D:49,41
+DIM,,8,W,4/56,D:34,LOSPEED CAN HI to CEM,HIGH,matches CEM D:34,41
+DIM,,9,GN,3/127,,CAN to PDM/DDM,HIGH,,41
+DIM,,10,W,3/127,,CAN to PDM/DDM (via 54/11),HIGH,,41
+SWM,,2,BN,53/438,,Ground via 53/438,HIGH,,61
+SWM,,7,GN-W,4/56,D:58,LIN to CEM,HIGH,matches CEM D:58,42
+SWM,,9,Y,4/56,D:7,CEM D:7,HIGH,matches CEM D:7,36
+SWM,,10,Y,4/56,D:17,CEM D:17,HIGH,matches CEM D:17,36
+LSM,,1,R,53/425,,Power feed (via 11C/7 + 11C/9 fuses),HIGH,,61
+LSM,,3,GN-W,4/56,D:41,LIN to CEM,HIGH,matches CEM D:41,42
+LSM,,5,BN,53/438,,Ground,HIGH,,61
+FCM,A,1,VO-W,4/56,A:10,"CEM A:10 (F10 fuse, power)",HIGH,,121
+FCM,A,2,BL,3/112,A:3,CCM control signal,HIGH,,121
+FCM,A,3,Y,3/112,A:2,CCM control signal,HIGH,,121
+FCM,A,4,SB,31/10,,Ground (LHD),HIGH,LHD only,121
+FCM,B,1,BL,6/28,,Passenger compartment fan drive,HIGH,,121
+FCM,B,2,Y,6/28,,Fan return,HIGH,,121
+AUM,A,1,R,K:1,,Battery power direct,HIGH,,92
+AUM,A,2,VO,4/56,A:6,CEM A:6 power (F28 fuse),HIGH,matches CEM A:6 (resolved from conflict),92
+AUM,A,6,F28,,,Power input (CEM A:6 routed),HIGH,,92
+AUM,A,7,W,4/56,D:39,LOSPEED CAN HI,HIGH,matches CEM D:39,41
+AUM,A,8,GN,4/56,D:54,LOSPEED CAN LO,HIGH,matches CEM D:54,41
+AUM,A,9,BL-W,16/9,,Antenna power,HIGH,,92
+AUM,A,12,BN,31/84,,Ground,HIGH,,92
+AUM,B,1,GR-R,54/10,9,Front L speaker +,HIGH,,92
+AUM,B,2,GR,54/10,10,Front L speaker -,HIGH,,92
+AUM,B,5,GR-R,54/11,9,Front R speaker +,HIGH,,92
+AUM,B,6,GR,54/11,10,Front R speaker -,HIGH,,92
+AUM,B,7,GR-W,53/523,,Rear L speaker +,HIGH,,92
+AUM,B,8,GR,53/524,,Rear L speaker -,HIGH,,92
+AUM,B,11,GR-W,53/525,,Rear R speaker +,HIGH,,92
+AUM,B,12,GR,53/526,,Rear R speaker -,HIGH,,92
+DDM,A,2,W,4/56,D:39,LOSPEED CAN HI,HIGH,matches CEM D:39 via 54/10:3,41
+DDM,A,3,GN,4/56,D:54,LOSPEED CAN LO,HIGH,matches CEM D:54 via 54/10:4,41
+DDM,A,16,Y,3/85,,,HIGH,,109
+DDM,A,19,BL,3/85,,Window switch L-rear,HIGH,,109
+DDM,A,23,W,3/85,,,HIGH,,109
+DDM,A,24,GN,3/85,,,HIGH,,109
+DDM,B,3,VO,3/85,,,HIGH,,109
+DDM,B,4,R-SB,3/85,,,HIGH,,109
+DDM,B,12,R,54/10,1,Power feed via 11C/4 + 11C/5,HIGH,,109
+PDM,A,2,W,4/56,D:39,LOSPEED CAN HI,HIGH,,41
+PDM,A,3,GN,4/56,D:54,LOSPEED CAN LO,HIGH,,41
+PDM,B,12,R,54/11,1,Power feed,HIGH,,109
+BCM,,4,BL,4/56,B:22,F15 fuse - power/data,HIGH,matches CEM B:22,37
+BCM,,11,W,53/512,,HISPEED CAN HI (via 54/3:11),HIGH,,40
+BCM,,15,GN,53/513,,HISPEED CAN LO,HIGH,,40
+ECPS,,1,BN,6/71,1,Speed-dependent valve,HIGH,,106
+ECPS,,2,Y,6/71,2,Speed-dependent valve,HIGH,,106
+ECPS,,3,GN-W,4/56,C:17,CEM C:17 control,HIGH,matches CEM C:17,106
+ECPS,,4,BL,4/56,B:23,CEM B:23 power (F16),HIGH,,106
+ECPS,,5,SB,53/329,,Ground via 53/329 → 31/93,HIGH,,106
+SUM,A,15,GN,53/568,,HISPEED CAN LO (FOUR-C path),HIGH,,40
+SUM,A,16,W,53/567,,HISPEED CAN HI (FOUR-C path),HIGH,twisted w/ A:15,40
+SUM,C,1,BL,4/56,A:30,CEM A:30 (REM bus reference),HIGH,,38
+DEM,,1,BL-R,53/502,,CEM A:14 connection,HIGH,matches REM A:14,38
+DEM,,7,GN,53/513,,HISPEED CAN LO (AWD path),HIGH,,40
+DEM,,8,W,53/512,,HISPEED CAN HI (AWD path),HIGH,,40
+GSM,A,1,BL-W,4/56,D:23,CEM D:23,HIGH,,102
+GSM,A,2,GN-W,4/28,B:21,TCM B:21 (LIN),HIGH,via 54/3.1:5,102
+GSM,A,3,VO-W,4/56,A:25,CEM A:25,HIGH,,102
+GSM,A,6,SB,4/28,A:54,TCM A:54,HIGH,via 54/3.1:26,102
+PAM,A,1,BL,4/58,B:21,Power feed from REM B:21 (F26 fuse),HIGH,matches REM B:21,83
+PAM,A,8,SB,31/72,,Chassis ground via 53/602,HIGH,,83
+PAM,A,12,GN-W,4/58,D:32,LIN bus to REM D:32,HIGH,matches REM D:32,83
+PAM,B,1,SB,7/204+7/205+7/206+7/207,3,Front sensors common ground (all pin 3),HIGH,via 6-pin inline pin 6,83
+PAM,B,2,BL,7/204+7/205+7/206+7/207,1,Front sensors common data (all pin 1),HIGH,via 6-pin inline pin 1,83
+PAM,B,5,W,7/204,2,Front RF/O sensor signal (LHD),HIGH,via inline pin 5; 7/204 = right-front outer on LHD,83
+PAM,B,6,Y,7/205,2,Front RF/I sensor signal (LHD),HIGH,via inline pin 4; 7/205 = right-front inner on LHD,83
+PAM,B,7,VO,7/206,2,Front LF/I sensor signal (LHD),HIGH,via inline pin 3; 7/206 = left-front inner on LHD,83
+PAM,B,8,GN,7/207,2,Front LF/O sensor signal (LHD),HIGH,via inline pin 2; 7/207 = left-front outer on LHD,83
+PAM,C,1,SB,7/131+7/132+7/133+7/134,3,"Rear sensors common ground (all pin 3, shared bus)",HIGH,"C:1, C:7, C:8, C:9 all common ground",83
+PAM,C,2,VO,7/133,2,Rear RR/I sensor signal,HIGH,7/133 = right-rear inner,83
+PAM,C,3,Y,7/132,2,Rear LR/I sensor signal,HIGH,7/132 = left-rear inner,83
+PAM,C,4,GN,7/134,2,Rear RR/O sensor signal,HIGH,7/134 = right-rear outer,83
+PAM,C,5,W,7/131,2,Rear LR/O sensor signal,HIGH,7/131 = left-rear outer,83
+PAM,C,6,BL,7/131+7/132+7/133+7/134,1,"Rear sensors common data (all pin 1, shared bus)",HIGH,"C:6, C:10, C:11, C:12 all common data",83
+PAM,C,7,SB,7/132,3,Ground bus (parallel to C:1),HIGH,same common as C:1,83
+PAM,C,8,SB,7/133,3,Ground bus (parallel to C:1),HIGH,same common as C:1,83
+PAM,C,9,SB,7/134,3,Ground bus (parallel to C:1),HIGH,same common as C:1,83
+PAM,C,10,BL,7/132,1,Data bus (parallel to C:6),HIGH,same common as C:6,83
+PAM,C,11,BL,7/133,1,Data bus (parallel to C:6),HIGH,same common as C:6,83
+PAM,C,12,BL,7/134,1,Data bus (parallel to C:6),HIGH,same common as C:6,83
+RTI,,,R-W,4/58,B:8,Power feed from REM B:8 (F6 fuse),HIGH,shared with CD changer 16/15,92
+RTI,D,3,W,4/56,D:38,LOSPEED CAN HI (to UEM/PHM/CEM segment),HIGH,twisted pair w/ D:4; matches CEM D:38 via 53/433,92
+RTI,D,4,GN,4/56,D:53,LOSPEED CAN LO,HIGH,twisted pair w/ D:3; matches CEM D:53,92
+RTI,D,20,GN,4/58,D:21,LIN data to REM D:21,MEDIUM,visible on LOSPEED CAN page; secondary bus,41
+RTI,D,21,W,4/58,D:20,LIN data return,MEDIUM,,41

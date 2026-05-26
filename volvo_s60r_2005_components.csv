@@ -1,0 +1,397 @@
+Component ID,Description
+1/1,Battery
+2/14,"Relay, glow plug unit"
+2/22,"Relay, climate control system"
+2/32,Engine management system main relay
+2/33,"Relay, fuel system"
+2/35,Starter motor relay
+2/64,Auxiliary light (accessory) relay
+2/90,"Relay, windshield wiper, low/high speed"
+2/91,"Relay, intermittent windshield wiper"
+2/138,"Deadlock relay, left-hand rear door"
+2/139,"Deadlock relay, right-hand rear door"
+2/182,"Relay, headlight washer motor"
+2/191,"Relay, remote parking heater start, radio signal"
+2/192,"Relay (230V), engine heater"
+3/1,Ignition switch
+3/4,Cruise control switch SWS
+3/6,Hazard warning flasher switch
+3/8,Heated rear window/door mirror switch
+3/9,Brake light contact
+3/10,Reversing light contact
+3/25,Power sunroof switch
+3/26,Power driver’s seat module
+3/27,Power passenger seat module
+3/35,Trunk handle switch
+3/37,Horn contact
+3/47,Parking brake contact
+3/53,Recirculation switch
+3/56,Fan switch
+3/59,"Control, beam adjustment"
+3/60,Auxiliary light switch
+3/62,Hood alarm contact
+3/71,Gear selector contacts
+3/74,Left-hand front door lock unit
+3/75,Right-hand front door lock unit
+3/76,Left-hand rear door lock unit
+3/77,Right-hand rear door lock unit
+3/78,Trunk lid lock unit
+3/80,"Switch, left-hand central lock"
+3/82,"Switch, right-hand central lock"
+3/85,Rear left door power window switch
+3/86,Rear right door power window switch
+3/91,"Switch, left-hand heated seat"
+3/92,"Switch, right-hand heated seat"
+3/93,"Switch, left-hand seat belt buckle"
+3/94,"Switch, right-hand seat belt buckle"
+3/95,Spin control switch
+3/111,Light Switch Module (LSM)
+3/112,Climate Control Module (CCM)
+3/113,Rear adjustable head restraint relay
+3/117,Dome light control module
+3/118,Climate control switch
+3/119,"Climate control switch, auto"
+3/121,"Climate control switch, defroster"
+3/122,"Climate control switch, ventilation"
+3/123,"Climate control switch, floor"
+3/124,"Temperature switch, left-hand side"
+3/125,"Temperature switch, right-hand side"
+3/126,Driver/Passenger Door Module (DDM/PDM)
+3/127,Passenger/Driver Door Module (PDM/DDM)
+3/131,"Switch, audio/mobile phone"
+3/135,RTI switch
+3/155,Automatic transmission program selector
+3/156,Gear Selector Module (GSM)
+3/171,"Switch, retractable door mirrors"
+3/173,"Switch, trunk lid private lock"
+3/174,"Switch, reduced alarm"
+3/183,"Switch, max defrost"
+3/184,CNG/LPG switch
+3/225,"Control unit, continuous damping control (CDC)"
+3/245,Steering Wheel Module (SWM)
+4/7,Combustion Preheater Module (CPM)
+4/9,"Control module, Supplemental Restraint System (SRS)"
+4/16,Brake Control Module (BCM)
+4/28,Transmission Control Module (TCM)
+4/31,Fan control module
+4/33,Sunroof control module SRM
+4/46,Engine Control Module (ECM)
+4/50,Electronic Throttle Module (ETM)
+4/52,Power Seat Module (PSM)
+4/56,Central Electronic Module CEM
+4/58,Rear Electronic Module (REM)
+4/68,Steering Angle Sensor module SAS
+4/70,Upper Electronic Module UEM
+4/71,Cooling fan control module
+4/76,Remote control unit for garage door opener
+4/78,Accessory Electronic Module AEM
+4/82,Differential Electronic Module DEM
+4/83,Fuel pump control module
+4/84,"Suspension Module, SUM"
+4/86,Parking Assistance Module (PAM)
+4/99,Electronic power steering control module
+4/106,"Control module, remote parking heater start"
+4/107,"Control module, parking heater, Call start"
+4/110,Trailer Module TRM
+4/201,Left-hand seat heater control module
+4/202,Right-hand seat heater control module
+5/1,Driver Information Module (DIM)
+6/1,Windshield wiper motor
+6/3,Right-hand headlight wiper motor
+6/4,Left-hand headlight wiper motor
+6/15,Sunroof motor
+6/16,"Driver seat motor, backrest angle"
+6/17,"Driver seat motor, up/down front edge"
+6/18,"Driver seat motor, up/down rear edge"
+6/19,"Driver seat motor, forward/backward"
+6/20,"Passenger seat motor, forward/backward"
+6/25,Starter motor
+6/26,Generator
+6/28,"Motor, passenger compartment fan"
+6/29,"Motor, electric cooling fan"
+6/31,"Feed pump, ejectors"
+6/33,Fuel pump
+6/35,"Fuel pump, auxiliary heater"
+6/37,"Lock motor, fuel filler flap"
+6/38,Left-hand headlight level adjustment motor
+6/39,Right-hand headlight adjustment motor
+6/44,"Cooling fan, electrics box, engine compartment"
+6/48,"Damper motor, recirculation"
+6/58,"Motor, front left power window"
+6/60,"Motor, front right power window"
+6/62,Left-hand power door mirror
+6/63,Right-hand power door mirror
+6/64,"Passenger seat motor, backrest angle"
+6/65,"Passenger seat motor, up/down front edge"
+6/66,"Passenger seat motor, up/down rear edge"
+6/67,"Pump, fuel leakage control"
+6/69,"Damper motor, ventilation/floor/defroster"
+6/71,"Valve, speed-dependent power steering"
+6/73,"Coolant pump, auxiliary heater"
+6/92,"Motor, rear left power window"
+6/93,"Motor, rear right power window"
+6/95,"Damper motor, temperature, left-hand side"
+6/96,"Damper motor, temperature, right-hand side"
+6/102,"Damper motor, defroster"
+6/103,"Damper motor, floor/ventilation"
+6/104,"Pump, high pressure headlight washer"
+6/105,"Fuel distributor, gas"
+6/114,Vacuum pump
+6/120,Engine throttle body
+6/127,"Pump, headlight washer, front/rear window"
+7/4,Brake fluid level sensor
+7/5,Washer fluid level sensor
+7/6,Oil pressure sensor
+7/8,"Pressure sensor, climate control system"
+7/10,Interior temperature sensor
+7/11,Outside temperature sensor
+7/12,"Solar sensor, twilight sensor and indicator alarm"
+7/15,Heated oxygen sensor
+7/16,Coolant temperature sensor
+7/17,Mass airflow sensor MAF
+7/23,Rear knock sensor
+7/24,Front knock sensor
+7/25,Impulse sensor
+7/31,Left-hand front ABS sensor
+7/32,Right-hand front ABS sensor
+7/35,Oil level sensor
+7/41,"Temperature sensor, evaporator"
+7/51,Accelerator pedal sensor
+7/56,Left-hand rear ABS sensor
+7/57,Right-hand rear ABS sensor
+7/61,Input speed sensor
+7/62,Output speed sensor
+7/73,Coolant level sensor
+7/74,"Oil temperature sensor, automatic transmission"
+7/77,"Temperature sensor, intake air"
+7/81,"Pressure sensor, intake manifold"
+7/82,"Heated oxygen sensor, diagnosis 1"
+7/87,"Acceleration sensor, Four-C, front left"
+7/88,"Acceleration sensor, Four-C, front right"
+7/89,"Acceleration sensor, Four-C, rear left"
+7/91,Steering angle sensor
+7/93,Occupant Weight Sensor (OWS)
+7/100,Inclination Sensor Module (ISM)
+7/103,Heated oxygen sensor 3
+7/104,Heated oxygen sensor 4 (diagnostic probe)
+7/105,"Outside temperature sensor, engine control mod- ule"
+7/108,Left-hand rear side impact sensor
+7/109,Right-hand rear side impact sensor
+7/110,Left-hand seat temperature sensor
+7/111,Right-hand seat temperature sensor
+7/115,Left-hand front side impact sensor
+7/116,Right-hand front side impact sensor
+7/118,"Acceleration sensor, Four-C, rear right"
+7/119,"Acceleration sensor, shock absorber, Four-C, front right"
+7/120,Rear left angle sensor
+7/121,"Rear right angle sensor, Four-C/Bi-Xenon"
+7/122,Mass Movement Sensor (MMS)
+7/123,Clutch pedal sensor
+7/124,Brake pedal sensor
+7/129,Brake pressure sensor 2
+7/130,"Fuel level sensor, injector side"
+7/131,"Parking assistance sensor, rear 1"
+7/132,"Parking assistance sensor, rear 2"
+7/133,"Parking assistance sensor, rear 3"
+7/134,"Parking assistance sensor, rear 4"
+7/139,Brake pressure sensor 1
+7/143,"Fuel level sensor, pump side"
+7/149,Rain sensor
+7/153,"Sensor, fuel level LPG"
+7/156,Pressure and temperature sensor
+7/159,Air quality sensor
+7/162,"Pressure sensor, fuel line"
+7/164,Sensor module DSTC/pressure sensor
+7/165,"Temperature sensor, intake manifold"
+7/172,"Position sensor, camshaft, intake side"
+7/173,"Sensor, camshaft"
+7/192,"Temperature sensor, evaporator"
+7/201,"Temperature sensor, gas"
+7/204,"Parking assistance sensor, front 1"
+7/205,"Parking assistance sensor, front 2"
+7/206,"Parking assistance sensor, front 3"
+7/207,"Parking assistance sensor, front 4"
+8/3,"Electromagnetic clutch, climate control system"
+8/6-11,Injectors
+8/17,EGR valve
+8/18,EVAP valve
+8/19,"Solenoid, variable valve timing outlet"
+8/20,"Shock absorber, Four-C, front left"
+8/21,"Shock absorber, Four-C, front right"
+8/22,"Shock absorber, Four-C, rear left"
+8/23,"Shock absorber, Four-C, rear right"
+8/28,Turbocharger control valve
+8/30,Driver side airbag igniter
+8/31,Passenger side airbag igniter
+8/32,"Igniter, passenger side airbag stage 2"
+8/33,Front left belt tensioner igniter
+8/34,Front right seat belt tensioner igniter
+8/37,Automatic transmission
+8/38,Shift solenoid 1
+8/39,Shift solenoid 2
+8/40,Lock-up solenoid
+8/41,Pressure solenoid
+8/46,DSTC activation module
+8/51,Front left side airbag igniter
+8/52,Front right side airbag igniter
+8/55,Rear left belt tensioner igniter
+8/56,Rear right belt tensioner igniter
+8/59,Rear left head restraint solenoid
+8/60,Rear right head restraint solenoid
+8/61,Driver side airbag igniter step 2
+8/62,"Belt tensioner igniter, center rear seat"
+8/64,"Solenoid valve, engine mounting"
+8/66,Left-hand inflatable curtain igniter
+8/67,Right-hand inflatable curtain igniter
+8/71,Throttle solenoid
+8/72,Shift solenoid 3
+8/73,Shift solenoid 4
+8/74,Shift solenoid 5
+8/75,"Valve, fuel cut-off DFCO"
+8/76,Gas tank valve
+8/78,Oil pressure sensor
+8/79,Valve LPG
+8/81,"Solenoid, variable valve timing outlet"
+8/82,"Solenoid, variable turbo geometry"
+8/84,"Switch, vacuum pump"
+8/85,"Thermostatic switch, fuel filter"
+8/88,"Solenoid, gas tank CNG rear"
+8/89,"Solenoid, fuel tank CNG front left"
+8/90,"Solenoid, fuel tank CNG front right"
+8/111,"Solenoid valve, high-pressure diesel"
+8/134,"Solenoid, reverse interlock M66"
+9/1,Front 12V outlet
+9/2,Heated rear window
+9/12,Left seat heater
+9/13,Right seat warmer
+9/16,Left-hand backrest heating element
+9/17,Right-hand backrest heating element
+9/18,Left-hand seat heating element
+9/19,Right-hand seat heating element
+9/25,Rear 12V outlet
+9/30,Auxiliary heater
+9/32,PTC resistor - air preheating
+9/33,Left-hand heated door mirror
+9/34,Right-hand heated door mirror
+9/38,Electrically heated fuel filter
+10/1,Left-hand front lamp housing
+10/2,Right-hand front lamp housing
+10/3,License plate lighting
+10/5,Front left fog light
+10/6,Front right fog light
+10/11,Front left parking light
+10/12,Front right parking light
+10/13,Front left direction indicator
+10/14,Front right direction indicator
+10/15,Front left fender direction indicator
+10/16,Front right fender direction indicator
+10/17,"Lamp housing, right-hand tail light"
+10/18,"Lamp housing, left-hand tail light"
+10/19,Auxiliary brake light
+10/29,Glove compartment lighting
+10/42,Rear right parking light
+10/43,Right-hand brake light
+10/44,Right-hand tail light lamp
+10/45,Right-hand tail light lamp 2
+10/46,"Fog light, right rear"
+10/47,Rear right direction indicator
+10/48,Right-hand reversing light
+10/49,Rear left parking light
+10/50,Left-hand brake light
+10/51,Left-hand tail light lamp
+10/52,Left-hand tail light lamp 2
+10/53,"Fog light, left rear"
+10/54,Rear left direction indicator
+10/55,Left-hand reversing light
+10/64,Right-hand high beam
+10/65,"Auxiliary light, front right"
+10/66,Right-hand low beam/daytime running lights
+10/68,Left-hand high beam/daytime running lights
+10/69,"Auxiliary light, front left"
+10/70,Left-hand low beam
+10/71,Front left side marker light
+10/72,Front ashtray lighting
+10/73,Front right side marker light
+10/114,Left-hand vanity mirror lighting
+10/115,Right-hand vanity mirror lighting
+10/122,Left-hand rear courtesy lighting
+10/123,Right-hand rear courtesy lighting
+10/125,Left-hand front courtesy lighting
+10/126,Right-hand front courtesy lighting
+10/127,"Lighting, cargo compartment, left-hand side"
+10/128,"Lighting, cargo compartment, right-hand side"
+10/129,Front left parking light
+10/130,Front right parking light
+10/142,Front left door control module lighting
+10/143,Front right door control module lighting
+10/148,Left-hand rearview mirror lighting
+10/149,Right-hand rearview mirror lighting
+10/150,Rear reading light
+10/151,Left-hand rear door switch lighting
+10/152,Right-hand rear door switch lighting
+10/155,Recirculation switch lighting
+10/156,"Lighting, passenger compartment fan potentiom- eter"
+10/157,Left heater control illumination
+10/158,"Lighting, control for climate control"
+10/159,Right heater control illumination
+10/160,"Lighting, switch for heated rear window, mirrors, front seats"
+10/218,"Indicator light, remote start"
+11A/no.,Main fuses in engine compartment fuse box
+11B/no.,Fuses in engine compartment fuse box
+11C/no.,Fuses in passenger compartment fuse box
+11E/no.,Main fuses at battery
+15/30,Connecting rail to 15/31
+15/31,Engine compartment distribution box
+16/1,Audio Module (AUM)
+16/2,Amplifier
+16/3,Right-hand front door speaker
+16/4,Left-hand front door speaker
+16/5,Right-hand rear door speaker
+16/6,Left-hand rear door speaker
+16/9,Window antenna
+16/10,Horn 1
+16/11,Horn 2
+16/15,CD changer
+16/16,"Window antenna amplifier, left"
+16/17,"Left-hand speaker, rear shelf"
+16/18,"Right-hand speaker, rear shelf"
+16/26,Central dashboard speaker
+16/35,Siren Control Module (SCM)
+16/36,TV receiver
+16/45,Road Traffic Information (RTI)
+16/46,Multimedia display
+16/47,GPS antenna RTI
+16/55,Left-hand front tweeter
+16/56,Right-hand front tweeter
+16/59,"Antenna, remote control"
+16/60,Phone Module (PHM)
+16/62,"Hand unit, mobile phone"
+16/63,"GPS antenna, Telephone"
+16/64,"Antenna, mobile telephone"
+16/65,Antenna ring/ignition switch lighting
+16/67,"Amplifier antenna, bumper"
+16/68,"Antenna, bumper"
+16/71,"Window antenna amplifier, right"
+16/77,"Microphone, mobile telephone"
+16/78,"Speaker, mobile telephone"
+16/93,"Control module, cellular telephone handsfree"
+16/126,"Holder, cellular telephone handsfree"
+16/127,"Microphone, cellular telephone handsfree"
+16X/1,Connector interface original vehicle
+17/13,Data link connector
+17/17,Jump start connection
+17/19,"12V outlet, cargo compartment"
+17/38,"Socket, 7-pin, towing bracket wiring"
+17/39,"Socket, 13-pin, towing bracket wiring"
+18/4,Contact reel
+20/3-8,Spark plug and ignition coil
+20/16,Capacitor
+20/22-26,Glow plug
+27/3,"Left-hand Camera Module, LCM"
+27/4,"Right-hand Camera Module, RCM"
+31/no.,Ground connection
+53/no.,Junction point
+54/no.,Connector
+54X/no,Connector interface original vehicle
+A1,Connecting rail to 15/31
+C1-6,Connecting rails to 15/31
