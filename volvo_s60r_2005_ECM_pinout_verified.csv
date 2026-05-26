@@ -1,76 +1,76 @@
-Module,Connector,Pin,Wire Color,Goes To,Source Pin,Function / Role,Confidence,Notes,Source PDF Pages
-ECM,A,1,GN-SB,6/120,6,ETB position sensor 2 signal,HIGH,,47
-ECM,A,2,GN-GR,7/156,4,Boost/MAP sensor signal,HIGH,twisted pair w/ A:3,47
-ECM,A,3,GN-R,7/156,2,Boost/MAP sensor signal,HIGH,twisted pair w/ A:2,47
-ECM,A,4,GR-R,7/16,1,Coolant temperature signal,HIGH,,47
-ECM,A,5,GN-R,7/165,2,Intake manifold pressure signal,HIGH,,47
-ECM,A,6,GN-R,7/82,2,O2 sensor 2 signal,HIGH,,56
-ECM,A,9,W,8/18,2,Solenoid drive (EVAP-related),HIGH,8/18 is variable valve timing outlet per component list,56
-ECM,A,13,Y-R,8/19,2,EVAP valve drive,HIGH,common to all variants on this page,56
-ECM,A,14,VO-W,53/315,,Injector common return (junction),HIGH,53/315 is sensor 5V supply / injector return,47
-ECM,A,15,Y-W,8/8,2,Injector cyl 3 drive,HIGH,,47
-ECM,A,16,BN-W,8/6,2,Injector cyl 1 drive,HIGH,,47
-ECM,A,17,GN,8/10,2,Injector cyl 5 drive,HIGH,,47
-ECM,A,18,W,7/15,4,O2 sensor 1 heater +,HIGH,,56
-ECM,A,19,GN-Y,6/120,2,ETB motor drive -,HIGH,,47
-ECM,A,20,BN,6/120,5,ETB position sensor ground,HIGH,,47
-ECM,A,21,GN-W,8/81,2,VVT outlet solenoid drive,HIGH,TURBO-marked; 8/81:1 (GN-GR) goes to 53/309 power junction,56
-ECM,A,22,VO-W,7/17,4,MAF sensor signal,HIGH,,47
-ECM,A,23,Y,7/165,4,Intake manifold pressure signal,HIGH,,47
-ECM,A,24,GN-R,7/15,6,O2 sensor 1 signal (twisted w/ A:28),HIGH,twisted with A:28; 7/15 is the O2 sensor,56
-ECM,A,26,BN-SB,7/35,4,QLT sensor ground,HIGH,,47
-ECM,A,27,BL-SB,7/173,3,Cam sensor 2 signal,HIGH,TURBO,56
-ECM,A,28,BL-SB,7/15,2,O2 sensor 1 heater drive (twisted w/ A:24),HIGH,,56
-ECM,A,29,R,7/172,1,Cam sensor 1 power (via 53/375),HIGH,TURBO; 53/375 is shared power w/ 7/173:1,56
-ECM,A,30,BN,20/4,1,Ignition coil cyl 2 trigger,HIGH,,47
-ECM,A,31,BL,20/3,1,Ignition coil cyl 1 trigger,HIGH,user-confirmed,47
-ECM,A,33,P-W,8/9,2,Injector cyl 4 drive,HIGH,,47
-ECM,A,34,BN-W,8/7,2,Injector cyl 2 drive,HIGH,"BN-W reused, OK",47
-ECM,A,35,GN,6/120,4,ETB position sensor supply 5V,HIGH,,47
-ECM,A,36,BL-R,6/120,1,ETB motor drive +,HIGH,,47
-ECM,A,38,BL-W,8/28,1,Turbocharger control valve drive,HIGH,,47
-ECM,A,39,VO-W,53/332,,Sensor 5V supply junction,HIGH,shared 5V to multiple sensors,47
-ECM,A,40,BL-W,7/35,1,QLT sensor LIN data,HIGH,dashed line = LIN bus,47
-ECM,A,41,GN-SB,7/15,1,O2 sensor 1 signal ref (twisted w/ A:42),HIGH,,56
-ECM,A,42,Y,7/15,5,O2 sensor 1 signal (twisted w/ A:41),HIGH,,56
-ECM,A,45,BN,7/23,1,Rear knock sensor (via 54/53:3),HIGH,,47
-ECM,A,46,BN-SB,7/24,1,Front knock sensor (via 54/53:1),HIGH,,47
-ECM,A,47,BL,7/172,3,Cam sensor 1 signal,HIGH,TURBO,56
-ECM,A,48,R,7/25,1,CKP sensor signal +,HIGH,,47
-ECM,A,50,Y,20/5,1,Ignition coil cyl 3 trigger,HIGH,user-confirmed; 53/328 is +12V supply to all coil pin 4 (not a shield),47
-ECM,A,51,VO,20/7,1,Ignition coil cyl 5 trigger,HIGH,,47
-ECM,A,52,P,20/6,1,Ignition coil cyl 4 trigger,HIGH,,47
-ECM,A,53,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
-ECM,A,54,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
-ECM,A,58,VO,7/17,5,MAF sensor signal,HIGH,"twisted bundle w/ 7/17 pins 3,4,5; user-confirmed",47
-ECM,A,59,W,6/120,3,ETB position sensor 1 signal,HIGH,,47
-ECM,A,60,BN-SB,53/319,,Sensor ground junction,HIGH,"shared by 7/16, 7/165, 7/8, others",47
-ECM,A,61,SB,7/82,4,O2 sensor 2 heater drive,HIGH,twisted with A:62,56
-ECM,A,62,GR,7/82,3,O2 sensor 2 ground/heater common,HIGH,twisted with A:61,56
-ECM,A,63,SB,53/326,,Ground via 53/326 → 31/96,HIGH,,47
-ECM,A,64,SB,7/24,2,Front knock sensor (via 54/53:2),HIGH,,47
-ECM,A,65,SB,7/172,2,Cam sensor 1 ground (via 53/376),HIGH,TURBO; 53/376 is shared ground w/ 7/173:2,56
-ECM,A,66,W,7/25,2,CKP sensor signal -,HIGH,,47
-ECM,A,67,Y-SB,7/23,2,Rear knock sensor (via 54/53:4),HIGH,,47
-ECM,A,68,BN-P,7/8,3,Oil pressure signal,HIGH,,47
-ECM,B,1,GN-W,54/36,1,CAN HISPEED (twisted w/ B:13),HIGH,user-confirmed; CAN hi-speed signal,48
-ECM,B,4,BN,7/123 (MAN only) / unused (AUTO),4,Clutch sensor signal (MAN swap wiring),HIGH,user-confirmed: AUTO has NO connection here. For MAN swap: run BN from B:4 + SB from B:15 to clutch sensor 7/123 in cabin. 53/324 is fabricated junction.,48
-ECM,B,5,GR-R,7/51,4,Accelerator pedal 7/51 pin 4,HIGH,user note: just routes to pedal connector pin 4,48
-ECM,B,7,BL-SB,6/67,1,"Fuel leakage pump ground (via 54/3.2:4, 54/34:4)",HIGH,,56
-ECM,B,9,GR-W,7/51,6,Accelerator pedal sensor 1 supply,HIGH,,48
-ECM,B,11,Y-W,3/1,X,Keyed +15 (ignition switch),HIGH,Arrow B on page 47; from ignition switch pin X via 15/31,48
-ECM,B,13,GN,54/36,2,CAN LOSPEED (twisted w/ B:1),HIGH,user-confirmed; CAN lo-speed signal,48
-ECM,B,15,SB,7/123,2,Clutch pedal sensor signal (MAN swap only),HIGH,user-confirmed: AUTO has NO connection; MAN swap requires running this SB wire to 7/123:2 in cabin,48
-ECM,B,17,BN-SB,7/51,5,Accelerator pedal sensor 1 ground,HIGH,,48
-ECM,B,23,GN-R,4/56,C:5,CEM connection (signal),HIGH,,48
-ECM,B,25,BL-W,7/51,2,Accelerator pedal sensor 2 signal,HIGH,,48
-ECM,B,26,Y-GR,4/56,C:35,CEM connection (signal),HIGH,,48
-ECM,B,29,OR-W,unused on AUTO,,Unused on AUTO transmission,HIGH,user-confirmed: 53/324 does not exist on AUTO; B:29 is unused for S60R AUTO,48
-ECM,B,34,GN-R,6/67,4,"Fuel leakage pump power (via 54/3.2:2, 54/34:1)",HIGH,dashed line; via GN-GR through 54/3.2,56
-ECM,B,37,BL-R,4/56,C:14,CEM connection (signal),HIGH,,48
-ECM,B,38,R,2/32,87,Main +30 power (via FMA2 / 15/31),HIGH,Arrow A on page 47; +30 supply from engine relay,48
-ECM,B,40,GN,6/67,2,"Fuel leakage pump drive (via 54/3.2:3, 54/34:2)",HIGH,,56
-ECM,B,44,GN-W,15/31_C5,11,Engine compartment dist box,HIGH,,48
-ECM,B,46,GR,5/1,2,Tach/RPM signal to DIM (via 54/3.1 pin 18),HIGH,,48
-ECM,B,47,Y,54/3.1,6,S60R-specific via inline connector 54/3.1,HIGH,"dashed line, S60R marking",48
-ECM,B,48,SB,6/44,,ECM/TCM cooling fan control,HIGH,user-confirmed: 6/44 = cooling fan electrics box (engine compartment). Dashed line in diagram.,48
+Module,Connector,Pin,Module Pin,Wire Color,Goes To,Source Pin,Goes To Pin,Function / Role,Confidence,Notes,Source PDF Pages
+ECM,A,1,A:1,GN-SB,6/120,6,6/120:6,Throttle body (ETB) position sensor 2 signal,HIGH,,47
+ECM,A,2,A:2,GN-GR,7/156,4,7/156:4,Boost/MAP sensor signal,HIGH,twisted pair w/ A:3,47
+ECM,A,3,A:3,GN-R,7/156,2,7/156:2,Boost/MAP sensor signal,HIGH,twisted pair w/ A:2,47
+ECM,A,4,A:4,GR-R,7/16,1,7/16:1,Coolant temperature signal,HIGH,,47
+ECM,A,5,A:5,GN-R,7/165,2,7/165:2,Intake manifold pressure signal,HIGH,,47
+ECM,A,6,A:6,GN-R,7/82,2,7/82:2,O2 sensor 2 signal,HIGH,,56
+ECM,A,9,A:9,W,8/18,2,8/18:2,Solenoid drive (EVAP-related),HIGH,8/18 is variable valve timing outlet per component list,56
+ECM,A,13,A:13,Y-R,8/19,2,8/19:2,Evaporative emissions (EVAP) valve drive,HIGH,common to all variants on this page,56
+ECM,A,14,A:14,VO-W,53/315,,53/315,Injector common return (junction),HIGH,53/315 is sensor 5V supply / injector return,47
+ECM,A,15,A:15,Y-W,8/8,2,8/8:2,Injector cyl 3 drive,HIGH,,47
+ECM,A,16,A:16,BN-W,8/6,2,8/6:2,Injector cyl 1 drive,HIGH,,47
+ECM,A,17,A:17,GN,8/10,2,8/10:2,Injector cyl 5 drive,HIGH,,47
+ECM,A,18,A:18,W,7/15,4,7/15:4,O2 sensor 1 heater +,HIGH,,56
+ECM,A,19,A:19,GN-Y,6/120,2,6/120:2,Throttle body (ETB) motor drive -,HIGH,,47
+ECM,A,20,A:20,BN,6/120,5,6/120:5,Throttle body (ETB) position sensor ground,HIGH,,47
+ECM,A,21,A:21,GN-W,8/81,2,8/81:2,Variable Valve Timing (VVT) outlet solenoid drive,HIGH,TURBO-marked; 8/81:1 (GN-GR) goes to 53/309 power junction,56
+ECM,A,22,A:22,VO-W,7/17,4,7/17:4,Mass Air Flow (MAF) sensor signal,HIGH,,47
+ECM,A,23,A:23,Y,7/165,4,7/165:4,Intake manifold pressure signal,HIGH,,47
+ECM,A,24,A:24,GN-R,7/15,6,7/15:6,O2 sensor 1 signal (twisted w/ A:28),HIGH,twisted with A:28; 7/15 is the O2 sensor,56
+ECM,A,26,A:26,BN-SB,7/35,4,7/35:4,Oil Quality/Level/Temp (QLT) sensor ground,HIGH,,47
+ECM,A,27,A:27,BL-SB,7/173,3,7/173:3,Cam sensor 2 signal,HIGH,TURBO,56
+ECM,A,28,A:28,BL-SB,7/15,2,7/15:2,O2 sensor 1 heater drive (twisted w/ A:24),HIGH,,56
+ECM,A,29,A:29,R,7/172,1,7/172:1,Cam sensor 1 power (via 53/375),HIGH,TURBO; 53/375 is shared power w/ 7/173:1,56
+ECM,A,30,A:30,BN,20/4,1,20/4:1,Ignition coil cyl 2 trigger,HIGH,,47
+ECM,A,31,A:31,BL,20/3,1,20/3:1,Ignition coil cyl 1 trigger,HIGH,user-confirmed,47
+ECM,A,33,A:33,P-W,8/9,2,8/9:2,Injector cyl 4 drive,HIGH,,47
+ECM,A,34,A:34,BN-W,8/7,2,8/7:2,Injector cyl 2 drive,HIGH,"BN-W reused, OK",47
+ECM,A,35,A:35,GN,6/120,4,6/120:4,Throttle body (ETB) position sensor supply 5V,HIGH,,47
+ECM,A,36,A:36,BL-R,6/120,1,6/120:1,Throttle body (ETB) motor drive +,HIGH,,47
+ECM,A,38,A:38,BL-W,8/28,1,8/28:1,Turbocharger control valve drive,HIGH,,47
+ECM,A,39,A:39,VO-W,53/332,,53/332,Sensor 5V supply junction,HIGH,shared 5V to multiple sensors,47
+ECM,A,40,A:40,BL-W,7/35,1,7/35:1,Oil Quality/Level/Temp (QLT) sensor LIN data,HIGH,dashed line = LIN bus,47
+ECM,A,41,A:41,GN-SB,7/15,1,7/15:1,O2 sensor 1 signal ref (twisted w/ A:42),HIGH,,56
+ECM,A,42,A:42,Y,7/15,5,7/15:5,O2 sensor 1 signal (twisted w/ A:41),HIGH,,56
+ECM,A,45,A:45,BN,7/23,1,7/23:1,Rear knock sensor (via 54/53:3),HIGH,,47
+ECM,A,46,A:46,BN-SB,7/24,1,7/24:1,Front knock sensor (via 54/53:1),HIGH,,47
+ECM,A,47,A:47,BL,7/172,3,7/172:3,Cam sensor 1 signal,HIGH,TURBO,56
+ECM,A,48,A:48,R,7/25,1,7/25:1,Crankshaft Position (CKP) sensor signal +,HIGH,,47
+ECM,A,50,A:50,Y,20/5,1,20/5:1,Ignition coil cyl 3 trigger,HIGH,user-confirmed; 53/328 is +12V supply to all coil pin 4 (not a shield),47
+ECM,A,51,A:51,VO,20/7,1,20/7:1,Ignition coil cyl 5 trigger,HIGH,,47
+ECM,A,52,A:52,P,20/6,1,20/6:1,Ignition coil cyl 4 trigger,HIGH,,47
+ECM,A,53,A:53,SB,53/326,,53/326,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,54,A:54,SB,53/326,,53/326,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,58,A:58,VO,7/17,5,7/17:5,Mass Air Flow (MAF) sensor signal,HIGH,"twisted bundle w/ 7/17 pins 3,4,5; user-confirmed",47
+ECM,A,59,A:59,W,6/120,3,6/120:3,Throttle body (ETB) position sensor 1 signal,HIGH,,47
+ECM,A,60,A:60,BN-SB,53/319,,53/319,Sensor ground junction,HIGH,"shared by 7/16, 7/165, 7/8, others",47
+ECM,A,61,A:61,SB,7/82,4,7/82:4,O2 sensor 2 heater drive,HIGH,twisted with A:62,56
+ECM,A,62,A:62,GR,7/82,3,7/82:3,O2 sensor 2 ground/heater common,HIGH,twisted with A:61,56
+ECM,A,63,A:63,SB,53/326,,53/326,Ground via 53/326 → 31/96,HIGH,,47
+ECM,A,64,A:64,SB,7/24,2,7/24:2,Front knock sensor (via 54/53:2),HIGH,,47
+ECM,A,65,A:65,SB,7/172,2,7/172:2,Cam sensor 1 ground (via 53/376),HIGH,TURBO; 53/376 is shared ground w/ 7/173:2,56
+ECM,A,66,A:66,W,7/25,2,7/25:2,Crankshaft Position (CKP) sensor signal -,HIGH,,47
+ECM,A,67,A:67,Y-SB,7/23,2,7/23:2,Rear knock sensor (via 54/53:4),HIGH,,47
+ECM,A,68,A:68,BN-P,7/8,3,7/8:3,Oil pressure signal,HIGH,,47
+ECM,B,1,B:1,GN-W,54/36,1,54/36:1,CAN HISPEED (twisted w/ B:13),HIGH,user-confirmed; CAN hi-speed signal,48
+ECM,B,4,B:4,BN,7/123 (MAN only) / unused (AUTO),4,7/123 (MAN only) / unused (AUTO):4,Clutch sensor signal (MAN swap wiring),HIGH,user-confirmed: AUTO has NO connection here. For MAN swap: run BN from B:4 + SB from B:15 to clutch sensor 7/123 in cabin. 53/324 is fabricated junction.,48
+ECM,B,5,B:5,GR-R,7/51,4,7/51:4,Accelerator pedal 7/51 pin 4,HIGH,user note: just routes to pedal connector pin 4,48
+ECM,B,7,B:7,BL-SB,6/67,1,6/67:1,"Fuel leakage pump ground (via 54/3.2:4, 54/34:4)",HIGH,,56
+ECM,B,9,B:9,GR-W,7/51,6,7/51:6,Accelerator pedal sensor 1 supply,HIGH,,48
+ECM,B,11,B:11,Y-W,3/1,X,3/1:X,Keyed +15 (ignition switch),HIGH,Arrow B on page 47; from ignition switch pin X via 15/31,48
+ECM,B,13,B:13,GN,54/36,2,54/36:2,CAN LOSPEED (twisted w/ B:1),HIGH,user-confirmed; CAN lo-speed signal,48
+ECM,B,15,B:15,SB,7/123,2,7/123:2,Clutch pedal sensor signal (MAN swap only),HIGH,user-confirmed: AUTO has NO connection; MAN swap requires running this SB wire to 7/123:2 in cabin,48
+ECM,B,17,B:17,BN-SB,7/51,5,7/51:5,Accelerator pedal sensor 1 ground,HIGH,,48
+ECM,B,23,B:23,GN-R,4/56,C:5,4/56:C:5,CEM connection (signal),HIGH,,48
+ECM,B,25,B:25,BL-W,7/51,2,7/51:2,Accelerator pedal sensor 2 signal,HIGH,,48
+ECM,B,26,B:26,Y-GR,4/56,C:35,4/56:C:35,CEM connection (signal),HIGH,,48
+ECM,B,29,B:29,OR-W,unused on AUTO,,unused on AUTO,Unused on AUTO transmission,HIGH,user-confirmed: 53/324 does not exist on AUTO; B:29 is unused for S60R AUTO,48
+ECM,B,34,B:34,GN-R,6/67,4,6/67:4,"Fuel leakage pump power (via 54/3.2:2, 54/34:1)",HIGH,dashed line; via GN-GR through 54/3.2,56
+ECM,B,37,B:37,BL-R,4/56,C:14,4/56:C:14,CEM connection (signal),HIGH,,48
+ECM,B,38,B:38,R,2/32,87,2/32:87,Main +30 power (via FMA2 / 15/31),HIGH,Arrow A on page 47; +30 supply from engine relay,48
+ECM,B,40,B:40,GN,6/67,2,6/67:2,"Fuel leakage pump drive (via 54/3.2:3, 54/34:2)",HIGH,,56
+ECM,B,44,B:44,GN-W,15/31_C5,11,15/31_C5:11,Engine compartment dist box,HIGH,,48
+ECM,B,46,B:46,GR,5/1,2,5/1:2,Tach/RPM signal to DIM (via 54/3.1 pin 18),HIGH,,48
+ECM,B,47,B:47,Y,54/3.1,6,54/3.1:6,S60R-specific via inline connector 54/3.1,HIGH,"dashed line, S60R marking",48
+ECM,B,48,B:48,SB,6/44,,6/44,ECM/TCM cooling fan control,HIGH,user-confirmed: 6/44 = cooling fan electrics box (engine compartment). Dashed line in diagram.,48
