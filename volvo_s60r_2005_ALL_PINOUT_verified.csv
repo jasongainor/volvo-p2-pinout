@@ -58,7 +58,7 @@ ECM,B,4,B:4,BN,7/123 (MAN only) / unused (AUTO),4,7/123 (MAN only) / unused (AUT
 ECM,B,5,B:5,GR-R,7/51,4,7/51:4,Accelerator pedal 7/51 pin 4,HIGH,user note: just routes to pedal connector pin 4,48
 ECM,B,7,B:7,BL-SB,6/67,1,6/67:1,"Fuel leakage pump ground (via 54/3.2:4, 54/34:4)",HIGH,,56
 ECM,B,9,B:9,GR-W,7/51,6,7/51:6,Accelerator pedal sensor 1 supply,HIGH,,48
-ECM,B,11,B:11,Y-W,3/1,X,3/1:X,Keyed +15 (ignition switch),HIGH,Arrow B on page 47; from ignition switch pin X via 15/31,48
+ECM,B,11,B:11,R,3/1,X,3/1:X,Keyed +15 (ignition switch),HIGH,Arrow B on page 47; from ignition switch pin X via 15/31,48
 ECM,B,13,B:13,GN,54/36,2,54/36:2,CAN LOSPEED (twisted w/ B:1),HIGH,user-confirmed; CAN lo-speed signal,"40, 48"
 ECM,B,15,B:15,SB,7/123,2,7/123:2,Clutch pedal sensor signal (MAN swap only),HIGH,user-confirmed: AUTO has NO connection; MAN swap requires running this SB wire to 7/123:2 in cabin,48
 ECM,B,17,B:17,BN-SB,7/51,5,7/51:5,Accelerator pedal sensor 1 ground,HIGH,,48
@@ -68,7 +68,7 @@ ECM,B,26,B:26,Y-GR,4/56,C:35,4/56:C:35,CEM connection (signal),HIGH,,48
 ECM,B,29,B:29,OR-W,unused on AUTO,,unused on AUTO,Unused on AUTO transmission,HIGH,user-confirmed: 53/324 does not exist on AUTO; B:29 is unused for S60R AUTO,48
 ECM,B,34,B:34,GN-R,6/67,4,6/67:4,"Fuel leakage pump power (via 54/3.2:2, 54/34:1)",HIGH,dashed line; via GN-GR through 54/3.2,56
 ECM,B,37,B:37,BL-R,4/56,C:14,4/56:C:14,CEM connection (signal),HIGH,,48
-ECM,B,38,B:38,R,2/32,87,2/32:87,Main +30 power (via FMA2 / 15/31),HIGH,Arrow A on page 47; +30 supply from engine relay,48
+ECM,B,38,B:38,Y-W,2/32,87,2/32:87,Main +30 power (via FMA2 / 15/31),HIGH,Arrow A on page 47; +30 supply from engine relay,48
 ECM,B,40,B:40,GN,6/67,2,6/67:2,"Fuel leakage pump drive (via 54/3.2:3, 54/34:2)",HIGH,,56
 ECM,B,44,B:44,GN-W,15/31_C5,11,15/31_C5:11,Engine compartment dist box,HIGH,,48
 ECM,B,46,B:46,GR,5/1,2,5/1:2,Tach/RPM signal to Driver Info Module (DIM) (via 54/3.1 pin 18),HIGH,,48
